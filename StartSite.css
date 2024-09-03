@@ -1,0 +1,49 @@
+@font-face {
+    font-family:'hanken kursiv';
+    src: url(HankenGrotesk-Italic-VariableFont_wght.ttf);
+    }
+    
+@font-face {
+    font-family:'hanken vanlig';
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+    }
+body{
+background-color: rgb(86, 86, 86);
+overflow-x: hidden;
+background-image: url(backgroundprograming.jpg);
+    }
+
+ul{
+align-items: center;
+list-style: none;
+display: flex;
+margin-left: 145px;
+left: 600px;
+}
+
+li{
+font-family: 'hanken vanlig';
+color: white;
+margin-left: 30px;
+}
+
+h1{
+font-family: 'hanken vanlig';
+color: white;
+text-align: center;
+margin-top: 200px;
+font-size: 55px;
+}
+   
+h2{
+    font-family: 'hanken vanlig';
+    color: white;
+    text-align: center;
+    margin-top: 285px;
+    font-size: 10px;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
