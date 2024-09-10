@@ -8,7 +8,7 @@
     src: url(HankenGrotesk-VariableFont_wght.ttf);
     }
 body{
-background-color: rgb(86, 86, 86);
+background-color: rgb(255, 255, 255);
 overflow-x: hidden;
 background-image: url(image.jpg);
     }
@@ -29,9 +29,9 @@ margin-left: 30px;
 
 h1{
 font-family: 'hanken vanlig';
-color: white;
+color: rgb(0, 0, 0);
 text-align: center;
-margin-top: 200px;
+margin-top: 50px;
 font-size: 55px;
 }
    
