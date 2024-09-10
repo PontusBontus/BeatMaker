@@ -47,3 +47,29 @@ a {
 text-decoration: none;
 color: white;
 }
+
+body {margin:0;}
+    
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "inter";
+  text-align: center;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: rgb(209, 209, 209);
+  color: black;
+}
