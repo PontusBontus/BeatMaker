@@ -8,8 +8,8 @@
     src: url(HankenGrotesk-VariableFont_wght.ttf);
     }
 @font-face {
-        font-family:'bad grunge';
-        src: url(BAD\ GRUNGE.ttf);
+        font-family:'Hero';
+        src: url(Nightmare_Hero_Normal.ttf);
         }
 body{
 background-color: rgb(86, 86, 86);
@@ -32,7 +32,7 @@ margin-left: 30px;
 }
 
 h1{
-font-family: 'hanken vanlig';
+font-family: 'Hero';
 color: rgb(255, 255, 255);
 text-align: left;
 margin-top: 250px;
