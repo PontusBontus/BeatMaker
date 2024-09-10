@@ -7,7 +7,7 @@
     font-family:'hanken vanlig';
     src: url(HankenGrotesk-VariableFont_wght.ttf);
     }
-@font-face {
+@font-face { 
         font-family:'Hero';
         src: url(Nightmare_Hero_Normal.ttf);
         }
@@ -33,6 +33,7 @@ margin-left: 30px;
 
 h1{
 font-family: 'Hero';
+letter-spacing: 5px;
 color: rgb(255, 255, 255);
 text-align: left;
 margin-top: 250px;
