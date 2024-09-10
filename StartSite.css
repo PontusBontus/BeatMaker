@@ -7,6 +7,10 @@
     font-family:'hanken vanlig';
     src: url(HankenGrotesk-VariableFont_wght.ttf);
     }
+@font-face {
+        font-family:'bad grunge';
+        src: url(BAD\ GRUNGE.ttf);
+        }
 body{
 background-color: rgb(86, 86, 86);
 overflow-x: hidden;
@@ -29,11 +33,12 @@ margin-left: 30px;
 
 h1{
 font-family: 'hanken vanlig';
-color: white;
+color: rgb(255, 255, 255);
 text-align: left;
 margin-top: 250px;
 font-size: 55px;
 margin-left: 100px;
+
 }
    
 h2{
