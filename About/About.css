@@ -12,9 +12,7 @@
         src: url(Nightmare_Hero_Normal.ttf);
         }
 body{
-background-color: rgb(86, 86, 86);
 overflow-x: hidden;
-background-image: url(image.jpg);
     }
 
 ul{
@@ -35,16 +33,16 @@ h1{
 font-family: 'Hero';
 letter-spacing: normal;
 font-weight: lighter;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 text-align: center;
 font-size: 80px;
 }
    
 h2{
     font-family: 'hanken vanlig';
-    color: white;
+    color: black;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 370px;
     font-size: 10px;
 }
 
