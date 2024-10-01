@@ -12,7 +12,7 @@ class DrumKit {
         this.hihatAudio = document.querySelector('.hihat-sound');
         this.tomAudio = document.querySelector('.tom-sound')
         this.index = 0;
-        this.bpm = 150;
+        this.bpm = 200;
         this.isPlaying = null;
         this.select = document.querySelectorAll('select');
         this.muteBtns = document.querySelectorAll(".mute");
