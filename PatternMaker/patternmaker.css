@@ -9,62 +9,31 @@ body {
   transition: all 0.5s;
 }
 
-.dark-mode {
-  background-color: rgb(8, 8, 8);
-  color: white;
-}
-
-.switch {
-  position: relative;
-  display: block;
-  width: 90px;
-  height: 55px;
-  left: 90%;
-  top: 30px;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  transition: 0.5s;
-  border: 3px solid white;
-  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.4);
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  bottom: 14px;
-  top: 8px;
-  background-color: black;
-  transition: 0.5s;
-}
-.switch input {
-  display: none;
-}
-input:checked + .slider {
-  background: black;
-}
-.slider.round {
-  border-radius: 35px;
-}
-.slider.round:before {
-  width: 43%;
-  height: 43%;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  transform: rotateZ(-45deg);
-}
-input:checked + .slider:before {
-  transform: translateX(47px) rotateZ(45deg);
-  background-color: yellow;
+  width: 100%;
+  font-family: "inter";
+  text-align: center;
 }
 
-i,
-svg {
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: rgb(209, 209, 209);
+  color: black;
+}
+
+i, svg {
   pointer-events: none;
 }
 .kick-pad,
