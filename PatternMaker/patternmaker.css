@@ -122,6 +122,11 @@ i, svg {
   cursor: pointer;
   margin-top: 3rem;
 }
+
+.play:hover {
+  background: rgb(50, 50, 50);
+}
+
 select {
   padding: 1rem;
   font-size: 1rem;
