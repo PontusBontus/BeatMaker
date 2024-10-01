@@ -86,7 +86,7 @@ i, svg {
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .kick,
 .snare,
@@ -99,7 +99,6 @@ i, svg {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  margin: 0rem 2rem;
 }
 .controls button {
   padding: 1rem;
@@ -117,6 +116,7 @@ i, svg {
   padding: 1rem 2rem;
   font-size: 1.5rem;
   background: rgb(88, 88, 88);
+  border-radius:5px;
   color: white;
   border: none;
   cursor: pointer;
@@ -127,7 +127,7 @@ select {
   font-size: 1rem;
 }
 .mute.active {
-  background: grey;
+  background: rgb(0, 0, 0);
 }
 
 .tempo {
