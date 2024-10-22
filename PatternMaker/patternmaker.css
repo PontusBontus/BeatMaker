@@ -24,6 +24,7 @@ body {
 }
 
 .navbar a {
+  font-family: 'hanken vanlig';
   display: inline-block;
   color: #ffffff;
   padding: 14px 16px;
@@ -51,28 +52,28 @@ svg {
   border-radius: 5px;
 }
 .kick-pad {
-  background: rgb(160, 211, 224);
+  background: rgb(100, 100, 100);
 }
 .snare-pad {
-  background: rgb(224, 160, 208);
+  background: rgb(180, 180, 180);
 }
 .hihat-pad {
-  background: rgb(224, 194, 160);
+  background: rgb(100, 100, 100);
 }
 .tom-pad {
-  background: rgb(136, 246, 136);
+  background: rgb(180, 180, 180);
 }
 .kick-pad.active {
-  background: rgb(59, 197, 231);
+  background: rgb(50, 50, 50);
 }
 .snare-pad.active {
-  background: rgb(224, 58, 178);
+  background: rgb(50, 50, 50);
 }
 .hihat-pad.active {
-  background: rgb(216, 164, 105);
+  background: rgb(50, 50, 50);
 }
 .tom-pad.active {
-  background: rgb(49, 200, 66);
+  background: rgb(50, 50, 50);
 }
 .sequencer {
   display: flex;

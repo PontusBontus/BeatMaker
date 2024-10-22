@@ -65,6 +65,7 @@ body {margin:0;
     }
     
     .navbar a {
+      font-family: 'hanken vanlig';
       display: inline-block;
       color: #ffffff;
       padding: 14px 16px;
