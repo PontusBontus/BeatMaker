@@ -48,28 +48,28 @@ svg {
   border-radius: 5px;
 }
 .kick-pad {
-  background: rgb(100, 100, 100);
+  background: #9c9c9c
 }
 .snare-pad {
-  background: rgb(180, 180, 180);
+  background: #9c9c9c
 }
 .hihat-pad {
-  background: rgb(100, 100, 100);
+  background: #9c9c9c
 }
 .tom-pad {
-  background: rgb(180, 180, 180);
+  background: #9c9c9c
 }
 .kick-pad.active {
-  background: rgb(50, 50, 50);
+  background: #525252
 }
 .snare-pad.active {
-  background: rgb(50, 50, 50);
+  background: #525252
 }
 .hihat-pad.active {
-  background: rgb(50, 50, 50);
+  background: #525252
 }
 .tom-pad.active {
-  background: rgb(50, 50, 50);
+  background: #525252
 }
 .sequencer {
   display: flex;
