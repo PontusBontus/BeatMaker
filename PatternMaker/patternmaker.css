@@ -7,10 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'hanken vanlig';
   transition: all 0.5s;
+
+}
+body {
+  overflow: hidden; /* Hide scrollbars */
 }
 
 .navbar {
@@ -51,6 +54,8 @@ svg {
   cursor: pointer;
   border-radius: 5px;
 }
+
+
 .kick-pad {
   background: rgb(100, 100, 100);
 }
@@ -77,10 +82,11 @@ svg {
 }
 .sequencer {
   display: flex;
-  min-height: 100vh;
+  min-height: 1000;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .hihat-track,
@@ -100,10 +106,8 @@ svg {
   display: flex;
 }
 .controls {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
   margin: 0px 2px;
 }
 .controls button {
@@ -148,7 +152,7 @@ select {
 .tempo-slider {
   padding: 2px;
   -webkit-appearance: none;
-  margin: 10px 0px;
+  margin: 5px 0px;
   width: 100%;
   position: relative;
   background: rgb(80, 80, 80);
@@ -157,7 +161,7 @@ select {
 }
 .tempo p {
   font-size: 30px;
-  margin: 20px;
+  margin: 0px;
   text-align: center;
 }
 
