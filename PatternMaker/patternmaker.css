@@ -1,3 +1,7 @@
+@font-face {
+  font-family:'hanken vanlig';
+  src: url(HankenGrotesk-VariableFont_wght.ttf);
+  }
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'hanken vanlig';
   transition: all 0.5s;
 }
 
@@ -40,9 +44,9 @@ svg {
 .snare-pad,
 .hihat-pad,
 .tom-pad {
-  width: 5rem;
-  height: 5rem;
-  margin: 1rem 0.5rem;
+  width: 50px;
+  height: 50px;
+  margin: 1px 3px;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -86,7 +90,7 @@ svg {
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  margin-top: 5rem;
+  margin-top: 5px;
 }
 .kick,
 .snare,
@@ -99,14 +103,14 @@ svg {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  margin: 0rem 2rem;
+  margin: 0px 2px;
 }
 .controls button {
-  padding: 1rem;
+  padding: 15px;
   border: none;
   background: rgb(88, 88, 88);
   color: white;
-  font-size: 1rem;
+  font-size: 15;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -114,13 +118,14 @@ svg {
   transition: all 0.5s ease;
 }
 .play {
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
+  padding: 15px 30px;
+  font-size: 10px;
+  font-family: 'hanken vanlig';
   background: rgb(88, 88, 88);
   color: white;
-  border: none;
+  border: 20px;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 50px;
 }
 
 .play:hover {
@@ -128,30 +133,30 @@ svg {
 }
 
 select {
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 10px;
+  font-size: 10px;
 }
 .mute.active {
   background: rgb(0, 0, 0);
 }
 
 .tempo {
-  margin: 3rem;
+  margin: 10px;
   width: 30%;
 }
 .tempo-slider {
-  padding: 0.2rem;
+  padding: 2px;
   -webkit-appearance: none;
-  margin: 1rem 0rem;
+  margin: 10px 0px;
   width: 100%;
   position: relative;
   background: rgb(80, 80, 80);
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 20px;
 }
 .tempo p {
-  font-size: 1.5rem;
-  margin: 2rem;
+  font-size: 30px;
+  margin: 20px;
   text-align: center;
 }
 
