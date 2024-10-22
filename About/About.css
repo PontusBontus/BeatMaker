@@ -1,75 +1,95 @@
 @font-face {
-    font-family:'hanken vanlig';
-    src: url(HankenGrotesk-VariableFont_wght.ttf);
-    }
+  font-family:'hanken vanlig';
+  src: url(HankenGrotesk-VariableFont_wght.ttf);
+  }
 @font-face { 
-        font-family:'Hero';
-        src: url(Nightmare_Hero_Normal.ttf);
-        }
-body{
-overflow-x: hidden;
-    }
+    font-family:'Hero';
+    src: url(Nightmare_Hero_Normal.ttf);
+  }
 
-ul{
-align-items: center;
-list-style: none;
-display: flex;
-margin-left: 145px;
-left: 600px;
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: white;
+  color: black;
 }
 
-li{
-font-family: 'hanken vanlig';
-color: white;
-margin-left: 30px;
-}
-
-h1{
-font-family: 'Hero';
-letter-spacing: normal;
-font-weight: lighter;
-color: rgb(0, 0, 0);
-text-align: center;
-font-size: 80px;
-}
-   
-h2{
-    font-family: 'hanken vanlig';
-    color: black;
-    text-align: center;
-    margin-top: 370px;
-    font-size: 10px;
-}
-
-a {
-text-decoration: none;
-color: white;
-}
-
-body {margin:0;
-    overflow: hidden;}
-
-    
 .navbar {
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   width: 100%;
-  font-family: "inter";
+  z-index: 1000;
+  text-align: left;
+}
+    
+.navbar a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 400;
+}
+    
+  .navbar a:hover {
+    color: gray;
+  }
+
+h1{
+  font-family: 'Hero';
+  letter-spacing: normal;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 150px;
+  font-size: 100px;
+ }
+
+h2{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 25px;
+  font-size: 10px;
+}
+
+.section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 10px;
+}
+
+.section h2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #000000;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar a:hover {
-  background: rgb(209, 209, 209);
-  color: black;
+.about-container img {
+  margin-right: 20px;
+}
+
+.about-container p {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+  color: white;
 }
