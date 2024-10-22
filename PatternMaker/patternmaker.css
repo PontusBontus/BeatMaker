@@ -57,28 +57,28 @@ svg {
 
 
 .kick-pad {
-  background: #9c9c9c
+  background: rgb(100, 100, 100);
 }
 .snare-pad {
-  background: #9c9c9c
+  background: rgb(180, 180, 180);
 }
 .hihat-pad {
-  background: #9c9c9c
+  background: rgb(100, 100, 100);
 }
 .tom-pad {
-  background: #9c9c9c
+  background: rgb(180, 180, 180);
 }
 .kick-pad.active {
-  background: #525252
+  background: rgb(50, 50, 50);
 }
 .snare-pad.active {
-  background: #525252
+  background: rgb(50, 50, 50);
 }
 .hihat-pad.active {
-  background: #525252
+  background: rgb(50, 50, 50);
 }
 .tom-pad.active {
-  background: #525252
+  background: rgb(50, 50, 50);
 }
 .sequencer {
   display: flex;
@@ -94,7 +94,7 @@ svg {
 .kick-track,
 .tom-track {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 70%;
   margin-top: 5px;
@@ -130,7 +130,7 @@ svg {
   color: white;
   border: 20px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .play:hover {
@@ -152,7 +152,7 @@ select {
 .tempo-slider {
   padding: 2px;
   -webkit-appearance: none;
-  margin: 5px 0px;
+  margin: 10px 0px;
   width: 100%;
   position: relative;
   background: rgb(80, 80, 80);
