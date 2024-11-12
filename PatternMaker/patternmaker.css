@@ -57,16 +57,16 @@ svg {
 
 
 .kick-pad {
-  background: rgb(100, 100, 100);
+  background: rgb(103, 102, 102);
 }
 .snare-pad {
-  background: rgb(180, 180, 180);
+  background: rgb(103, 102, 102);
 }
 .hihat-pad {
-  background: rgb(100, 100, 100);
+  background: rgb(103, 102, 102);
 }
 .tom-pad {
-  background: rgb(180, 180, 180);
+  background: rgb(103, 102, 102);
 }
 .kick-pad.active {
   background: rgb(50, 50, 50);
@@ -129,6 +129,7 @@ svg {
   background: rgb(88, 88, 88);
   color: white;
   border: 20px;
+  border-radius: 5px;
   cursor: pointer;
   margin-top: 30px;
 }
@@ -142,7 +143,7 @@ select {
   font-size: 10px;
 }
 .mute.active {
-  background: rgb(56, 56, 56);
+  background: rgb(255, 0, 0);
 }
 
 .tempo {
