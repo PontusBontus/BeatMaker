@@ -23,6 +23,7 @@ class DrumKit {
         console.log(this)
         this.classList.toggle("active");
     }
+    
     // method for repetions (function to repeat)
     repeat() {
         // if the index's remainder is equal to 8, change step back to 0
@@ -186,4 +187,3 @@ drumKit.tempoSlider.addEventListener('change', function (e) {
 drumKit.darkmodeSwitch.addEventListener("click", function () {
     drumKit.updateDarkMode()
 })
-
