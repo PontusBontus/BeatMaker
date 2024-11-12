@@ -100,10 +100,16 @@ class DrumKit {
                 break;
         }
     }
+
+    
     mute(e) {
         const muteIndex = e.target.getAttribute("data-track");
+        const icon = e.target.querySelector('i'); // Get the icon inside the button
+    
         e.target.classList.toggle("active");
+    
         if (e.target.classList.contains('active')) {
+            // Mute the track and change the icon to "mute" icon
             switch (muteIndex) {
                 case "0":
                     this.kickAudio.volume = 0;
@@ -118,7 +124,10 @@ class DrumKit {
                     this.tomAudio.volume = 0;
                     break;
             }
+            icon.classList.remove('fa-volume-up'); // Change this to whatever the "unmuted" icon class is
+            icon.classList.add('fa-volume-mute'); // Change this to the "muted" icon class
         } else {
+            // Unmute the track and change the icon back to "volume-down" icon
             switch (muteIndex) {
                 case "0":
                     this.kickAudio.volume = 1;
@@ -133,25 +142,10 @@ class DrumKit {
                     this.tomAudio.volume = 1;
                     break;
             }
+            icon.classList.remove('fa-volume-mute'); // Change this to the "muted" icon class
+            icon.classList.add('fa-volume-up'); // Change this to whatever the "unmuted" icon class is
         }
     };
-    changeTempo(e) {
-        const tempoText = document.querySelector('.tempo-nr');
-        tempoText.innerText = e.target.value;
-    };
-    updateTempo(e) {
-        this.bpm = e.target.value;
-        clearInterval(this.isPlaying);
-        this.isPlaying = null;
-        const playBtn = document.querySelector('.play');
-        if (playBtn.classList.contains('active')) {
-            this.start()
-        }
-    }
-    updateDarkMode() {
-        const body = document.querySelector("body");
-        body.classList.toggle("dark-mode")
-    }
 };
 
 // new method call

@@ -113,7 +113,7 @@ svg {
 .controls button {
   padding: 15px;
   border: none;
-  background: rgb(88, 88, 88);
+  background: rgb(103, 102, 102);
   color: white;
   font-size: 15;
   cursor: pointer;
@@ -142,7 +142,7 @@ select {
   font-size: 10px;
 }
 .mute.active {
-  background: rgb(0, 0, 0);
+  background: rgb(56, 56, 56);
 }
 
 .tempo {
