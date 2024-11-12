@@ -192,3 +192,4 @@ drumKit.tempoSlider.addEventListener('change', function (e) {
 drumKit.darkmodeSwitch.addEventListener("click", function () {
     drumKit.updateDarkMode()
 })
+

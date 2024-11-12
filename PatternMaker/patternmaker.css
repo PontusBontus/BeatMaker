@@ -12,9 +12,9 @@ body {
   transition: all 0.5s;
 
 }
-body {
-  overflow: hidden; /* Hide scrollbars */
-}
+/*body {
+  overflow: hidden; /* Hide scrollbars 
+}*/
 
 .navbar {
   overflow: hidden;
@@ -172,4 +172,53 @@ select {
   to {
     transform: scale(1.2);
   }
+}
+
+
+#recordButton {
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: #28a745;
+}
+
+#recordButton:hover {
+  background-color: #218838;
+}
+
+#stopButton {
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+#stopButton:hover {
+  background-color: #c82333;
+}
+
+#downloadLink {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+#downloadLink:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
