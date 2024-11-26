@@ -11,6 +11,7 @@ body {
   font-family: 'hanken vanlig';
   transition: all 0.5s;
   background: black;
+  color: white;
 }
 
 .navbar {
@@ -57,7 +58,7 @@ svg {
   background: radial-gradient(#b7dfff, #006aff);
 }
 .snare-pad {
-  background: radial-gradient(#ffb7b7, #ff2600);
+  background: radial-gradient(#ffb7b7, #db0f00);
 }
 .hihat-pad {
   background: radial-gradient(#d7b7ff, #6a00ff);
@@ -122,21 +123,22 @@ svg {
 .controls button {
   padding: 15px;
   border: none;
-  background: rgb(103, 102, 102);
-  color: white;
+  background: rgb(33, 33, 33);
+  color: rgb(255, 255, 255);
   font-size: 15;
   cursor: pointer;
   transition: all 0.5s ease;
+  border-radius: 5px;
 }
 .pad {
   transition: all 0.5s ease;
 }
 .play {
   padding: 15px 30px;
-  font-size: 10px;
+  font-size: 25px;
   font-family: 'hanken vanlig';
-  background: rgb(88, 88, 88);
-  color: white;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -144,7 +146,7 @@ svg {
 }
 
 .play:hover {
-  background: rgb(50, 50, 50);
+  background: rgb(0, 0, 0);
 }
 
 select {
@@ -166,7 +168,7 @@ select {
   margin: 10px 0px;
   width: 100%;
   position: relative;
-  background: rgb(80, 80, 80);
+  background: rgb(255, 255, 255);
   cursor: pointer;
   border-radius: 20px;
 }
