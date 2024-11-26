@@ -76,7 +76,7 @@ class DrumKit {
             this.playBtn.innerHTML = '<i class="fas fa-play"></i>'; // Display play icon
             this.playBtn.classList.remove("active");
         } else {
-            this.playBtn.innerHTML = '<i class="fas fa-stop"></i>'; // Display stop icon
+            this.playBtn.innerHTML = '<i class="fas fa-pause"></i>'; // Display stop icon
             this.playBtn.classList.add("active");
         }
     }

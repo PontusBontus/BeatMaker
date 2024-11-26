@@ -130,6 +130,14 @@ svg {
   transition: all 0.5s ease;
   border-radius: 5px;
 }
+
+select {
+  background: rgb(33, 33, 33);
+  border-radius: 5px;
+  font-family: 'hanken vanlig'; 
+  color: white;
+  border: 0px solid rgb(0, 0, 0);
+}
 .pad {
   transition: all 0.5s ease;
 }
