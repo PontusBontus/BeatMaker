@@ -157,10 +157,6 @@ class DrumKit {
             this.start();
         }
     }
-
-    updateDarkMode() {
-        document.body.classList.toggle("dark-mode-active");
-    }
 }
 
 // Initialize the DrumKit class

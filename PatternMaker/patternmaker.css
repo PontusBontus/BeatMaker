@@ -14,13 +14,17 @@ body {
   color: white;
 }
 
+h1{
+  z-index: 1;
+}
+
 .navbar {
   overflow: hidden;
   background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: -1;
   text-align: left;
 }
 
@@ -70,25 +74,51 @@ svg {
   width: 52px;
   height: 52px;
   background: radial-gradient(#aadaff, #004dcf);
-  box-shadow: 0 0 12px 5px rgba(0, 119, 255, 0.8);
+  box-shadow:
+    0 0 3px #FFF,
+    0 0 3px #FFF,
+    0 0 33px rgba(0, 119, 255, 0.8),
+    0 0 36px rgba(0, 119, 255, 0.8),
+    0 0 45px rgba(0, 119, 255, 0.8),
+    inset 0 0 21px #FFF;
+  z-index: 1;
 }
+
 .snare-pad.active {
   width: 52px;
   height: 52px;
   background: radial-gradient(#ffafbb, #ec0303);
-  box-shadow: 0 0 12px 5px rgba(255, 0, 59, 0.8);
+  box-shadow:
+  0 0 3px #FFF,
+  0 0 3px #FFF,
+  0 0 33px rgba(255, 0, 59, 0.8),
+  0 0 36px rgba(255, 0, 59, 0.8),
+  0 0 45px rgba(255, 0, 59, 0.8),
+  inset 0 0 21px #FFF;
 }
 .hihat-pad.active {
   width: 52px;
   height: 52px;
   background: radial-gradient(#d2abff, #6b00cf);
-  box-shadow: 0 0 12px 5px rgba(107, 0, 207, 0.8);
+  box-shadow:
+  0 0 3px #FFF,
+  0 0 3px #FFF,
+  0 0 33px rgba(107, 0, 207, 0.8),
+  0 0 36px rgba(107, 0, 207, 0.8),
+  0 0 45px rgba(107, 0, 207, 0.8),
+  inset 0 0 21px #FFF;
 }
 .tom-pad.active {
   width: 52px;
   height: 52px;
   background: radial-gradient(#d1ffea, #00c600);
-  box-shadow: 0 0 12px 5px rgba(0, 185, 12, 0.8);;
+  box-shadow:
+  0 0 3px #FFF,
+  0 0 3px #FFF,
+  0 0 33px rgba(0, 185, 12, 0.8),
+  0 0 36px rgba(0, 185, 12, 0.8),
+  0 0 45px rgba(0, 185, 12, 0.8),
+  inset 0 0 21px #FFF;
 }
 .sequencer {
   display: flex;
