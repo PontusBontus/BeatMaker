@@ -1,117 +1,102 @@
 @font-face {
   font-family:'hanken vanlig';
   src: url(HankenGrotesk-VariableFont_wght.ttf);
-  }
-@font-face { 
-    font-family:'Hero';
-    src: url(Nightmare_Hero_Normal.ttf);
-  }
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  background-color: white;
-  color: black;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  text-align: left;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: left;
 }
-    
+
 .navbar a {
-  font-family: 'hanken vanlig';
-  display: inline-block;
-  color: #ffffff;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 19px;
-  font-weight: 400;
+    font-family: 'hanken vanlig';
+    display: inline-block;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 400;
 }
-    
-  .navbar a:hover {
+
+.navbar a:hover {
     color: gray;
-  }
-
-h1{
-  font-family: 'Hero';
-  letter-spacing: normal;
-  font-weight: lighter;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 150px;
-  font-size: 100px;
- }
-
-h2{
-  font-family: 'hanken vanlig';
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin-top: 25px;
-  font-size: 10px;
 }
 
-.section {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, .8);
-  border-radius: 10px;
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set background to black */
+    color: white; /* Set text color to white for readability */
 }
 
-.section h2 {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  margin-bottom: 20px;
+/* Pyramid Container */
+.pyramid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-top: 80px; /* Add padding to avoid overlap with navbar */
 }
 
-.section p {
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  margin-bottom: 40px;
-  text-align: center;
+/* Top row */
+.top-row {
+    margin-bottom: 20px;
 }
 
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* Bottom row */
+.bottom-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
 }
 
-.about-container img {
-  margin-right: 20px;
+/* Profile styles */
+.profile {
+    text-align: center;
+    margin: 10px;
 }
 
-.about-container p {
-  flex: 1;
-  text-align: left;
-  font-size: 18px;
-  color: white;
-}
-.yap {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  box-sizing: border-box;
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
 }
 
-.yap h2 {
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-  margin-bottom: 20px;
+.profile h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: white; /* Text color for names */
+    font-family: 'hanken vanlig';
 }
 
-.yap p {
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  margin-bottom: 40px;
-  text-align: center;
+.profile p {
+    font-size: 18px;
+    color: #ccc; /* Subdued text color for titles */
+    font-family: 'hanken vanlig';
+}
+
+/* Additional details */
+.profile ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #aaa; /* Slightly muted text for details */
+}
+
+.profile ul li {
+    font-family: 'Source Code Pro', monospace;
+    margin: 5px 0;
 }
