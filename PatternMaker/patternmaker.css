@@ -1,12 +1,17 @@
+/* Definierar ett anpassat teckensnitt som heter 'hanken vanlig' och anger dess källa */
 @font-face {
   font-family:'hanken vanlig';
   src: url(HankenGrotesk-VariableFont_wght.ttf);
-  }
+}
+
+/* Tar bort marginaler och fyllningar från alla element och aktiverar box-sizing för att inkludera padding och border i elementets totala storlek */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Ställer in standardteckensnitt, lägger till en smidig övergång på 0,5s och ändrar bakgrund och textfärg */
 body {
   font-family: 'hanken vanlig';
   transition: all 0.5s;
@@ -14,10 +19,12 @@ body {
   color: white;
 }
 
-h1{
+/* Ställer in ett z-index för h1-element */
+h1 {
   z-index: 1;
 }
 
+/* Stil för navigeringsfältet: fast position, full bredd, dold innehåll och bakgrundsfärg */
 .navbar {
   overflow: hidden;
   background-color: black;
@@ -28,6 +35,7 @@ h1{
   text-align: left;
 }
 
+/* Stil för länkar i navigeringsfältet: färg, padding och teckensnittsinställningar */
 .navbar a {
   font-family: 'hanken vanlig';
   display: inline-block;
@@ -38,14 +46,18 @@ h1{
   font-weight: 400;
 }
 
+/* Ändrar färg vid hovring över länkar */
 .navbar a:hover {
   color: gray;
 }
 
+/* Gör ikoner och SVG-element icke-klickbara */
 i, 
 svg {
   pointer-events: none;
 }
+
+/* Grundstil för pad-element (trummor): storlek, marginal, pekaren och hörnavrundning */
 .kick-pad,
 .snare-pad,
 .hihat-pad,
@@ -57,7 +69,7 @@ svg {
   border-radius: 5px;
 }
 
-
+/* Radialgradient för varje typ av pad */
 .kick-pad {
   background: radial-gradient(#b7dfff, #006aff);
 }
@@ -70,6 +82,8 @@ svg {
 .tom-pad {
   background: radial-gradient(#b7ffdf, #00ff00);
 }
+
+/* Stil för aktiva pads: större storlek, annan gradient och glödande skugga */
 .kick-pad.active {
   width: 52px;
   height: 52px;
@@ -83,7 +97,6 @@ svg {
     inset 0 0 21px #FFF;
   z-index: 1;
 }
-
 .snare-pad.active {
   width: 52px;
   height: 52px;
@@ -120,6 +133,8 @@ svg {
   0 0 45px rgba(0, 185, 12, 0.8),
   inset 0 0 21px #FFF;
 }
+
+/* Layout för sequencer: flexbox för centrerad justering och marginal för avstånd från toppen */
 .sequencer {
   display: flex;
   min-height: 1000;
@@ -129,6 +144,7 @@ svg {
   margin-top: 50px;
 }
 
+/* Ställer in layout för olika spår i sequencern */
 .hihat-track,
 .snare-track,
 .kick-track,
@@ -139,17 +155,23 @@ svg {
   width: 70%;
   margin-top: 5px;
 }
+
+/* Flexcontainer för olika typer av trummor */
 .kick,
 .snare,
 .hihat,
 .tom {
   display: flex;
 }
+
+/* Kontrollpanel för att placera knappar och element */
 .controls {
   justify-content: space-between;
   align-items: center;
   margin: 0px 2px;
 }
+
+/* Stil för kontrollknappar */
 .controls button {
   padding: 15px;
   border: none;
@@ -161,6 +183,7 @@ svg {
   border-radius: 5px;
 }
 
+/* Stil för select-element */
 select {
   background: rgb(33, 33, 33);
   border-radius: 5px;
@@ -168,9 +191,8 @@ select {
   color: white;
   border: 0px solid rgb(0, 0, 0);
 }
-.pad {
-  transition: all 0.5s ease;
-}
+
+/* Stil för play-knapp */
 .play {
   padding: 15px 30px;
   font-size: 25px;
@@ -183,22 +205,12 @@ select {
   margin-top: 30px;
 }
 
+/* Stil för hovring över play-knapp */
 .play:hover {
   background: rgb(0, 0, 0);
 }
 
-select {
-  padding: 10px;
-  font-size: 10px;
-}
-.mute.active {
-  background: rgb(255, 0, 0);
-}
-
-.tempo {
-  margin: 10px;
-  width: 30%;
-}
+/* Stil för tempo-slider */
 .tempo-slider {
   padding: 2px;
   -webkit-appearance: none;
@@ -210,12 +222,15 @@ select {
   cursor: pointer;
   border-radius: 20px;
 }
+
+/* Stil för tempo-text */
 .tempo p {
   font-size: 30px;
   margin: 0px;
   text-align: center;
 }
 
+/* Nyckelbildsanimation för att visa spår som spelas */
 @keyframes playTrack {
   from {
     transform: scale(1);
