@@ -2,50 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="About.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <a href="/index.html">Home</a>
         <a href="/PatternMaker/PatternMaker.html">Pattern Maker</a>
         <a href="/About/About.html">About</a>
+        <img src="logga.png" alt="" class="logga">
     </div>
 
-    <h1>AbouT</h1>
-
-    <div id="about" class="yap">
-        <h2>Beatus-Meatus</h2>
-        <p>Beatus-Meatus is a website designed to simplify making beats and your own kind of music!</p>
+    <!-- Pyramid Layout -->
+    <div class="pyramid-container">
+        <!-- Top row: CEO -->
+        <div class="top-row">
+            <div class="profile">
+                <img src="felix.jpg" alt="CEO Picture">
+                <h3>Peter Guzzman</h3>
+                <p>VD</p>
+                <ul>
+                    <li>Börsvärde: $3</li>
+                    <li>Livvakter: 0.5</li>
+                    <li>Start-ups: CDON, en liten skit sida på nätet</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Bottom row: Workers -->
+        <div class="bottom-row">
+            <div class="profile">
+                <img src="johan.jpg" alt="Worker 1 Picture">
+                <h3>Jonis</h3>
+                <p>Städare</p>
+            </div>
+            <div class="profile">
+                <img src="pontus.jpg" alt="Worker 2 Picture">
+                <h3>Pontus</h3>
+                <p>Vaktmästare</p>
+            </div>
+        </div>
     </div>
-
-    <div id="about-johan" class="section">
-      <h2>Johan</h2>
-      <div class="about-container">
-          <img src="johan.jpg" alt="Picture of Johan" width="200">
-          <p>Opp #1</p>
-      </div>
-  </div>
-
-  <div id="about-felix" class="section">
-    <h2>Felix</h2>
-    <div class="about-container">
-        <img src="felix.jpg" alt="Picture of Felix" width="200">
-        <p>JACKPOT JACKPOT JACKPOT</p>
-    </div>
-  </div>
-
-  <div id="about-pontus" class="section">
-    <h2>Pontus</h2>
-    <div class="about-container">
-        <img src="pontus.jpg" alt="Picture of Pontus" width="200">
-        <p>Emo</p>
-    </div>
-  </div>
-
-    <h2>All rights reserved © 2024 Johan Callert, Pontus Ebeling, Felix Olofsson</h2>
 </body>
 </html>
