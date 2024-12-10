@@ -1,42 +1,34 @@
-/* Definierar ett anpassat teckensnitt som heter 'hanken vanlig' och anger dess källa */
-@font-face {
+@font-face { /*Lägger till font som vi använder på hemsidan*/
   font-family:'hanken vanlig';
   src: url(HankenGrotesk-VariableFont_wght.ttf);
-}
-
-/* Tar bort marginaler och fyllningar från alla element och aktiverar box-sizing för att inkludera padding och border i elementets totala storlek */
+  }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Ställer in standardteckensnitt, lägger till en smidig övergång på 0,5s och ändrar bakgrund och textfärg */
-body {
-  font-family: 'hanken vanlig';
+body { 
+  font-family: 'hanken vanlig'; /*Sätter att allt inom body kommer att vara denna font*/
   transition: all 0.5s;
   background: black;
   color: white;
 }
 
-/* Ställer in ett z-index för h1-element */
-h1 {
-  z-index: 1;
+h1{
+  z-index: 1; /*Lägger h1 texten över navigationsbaren genom att lägga den överst i z-index*/
 }
 
-/* Stil för navigeringsfältet: fast position, full bredd, dold innehåll och bakgrundsfärg */
-.navbar {
+.navbar { /*CSS för navigationsbaren*/
   overflow: hidden;
   background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -1; 
   text-align: left;
 }
 
-/* Stil för länkar i navigeringsfältet: färg, padding och teckensnittsinställningar */
-.navbar a {
+.navbar a { /*CSS för texten på navigationsbaren*/
   font-family: 'hanken vanlig';
   display: inline-block;
   color: #ffffff;
@@ -46,18 +38,14 @@ h1 {
   font-weight: 400;
 }
 
-/* Ändrar färg vid hovring över länkar */
-.navbar a:hover {
-  color: gray;
+.navbar a:hover { 
+  color: gray; /*När man hovrar över text på navigationsbaren kommer den att bli grå*/
 }
 
-/* Gör ikoner och SVG-element icke-klickbara */
 i, 
 svg {
   pointer-events: none;
 }
-
-/* Grundstil för pad-element (trummor): storlek, marginal, pekaren och hörnavrundning */
 .kick-pad,
 .snare-pad,
 .hihat-pad,
@@ -69,8 +57,8 @@ svg {
   border-radius: 5px;
 }
 
-/* Radialgradient för varje typ av pad */
-.kick-pad {
+
+.kick-pad { /*CSS de olika trummplattorna när de inte är aktiverade*/
   background: radial-gradient(#b7dfff, #006aff);
 }
 .snare-pad {
@@ -82,12 +70,10 @@ svg {
 .tom-pad {
   background: radial-gradient(#b7ffdf, #00ff00);
 }
-
-/* Stil för aktiva pads: större storlek, annan gradient och glödande skugga */
-.kick-pad.active {
+.kick-pad.active { /*CSS för trummplattorna när de är aktiverade*/
   width: 52px;
   height: 52px;
-  background: radial-gradient(#aadaff, #004dcf);
+  background: radial-gradient(#aadaff, #004dcf); /*Lägger till en radial-gradient för att efterlikna en launchpad*/
   box-shadow:
     0 0 3px #FFF,
     0 0 3px #FFF,
@@ -97,6 +83,7 @@ svg {
     inset 0 0 21px #FFF;
   z-index: 1;
 }
+
 .snare-pad.active {
   width: 52px;
   height: 52px;
@@ -133,8 +120,6 @@ svg {
   0 0 45px rgba(0, 185, 12, 0.8),
   inset 0 0 21px #FFF;
 }
-
-/* Layout för sequencer: flexbox för centrerad justering och marginal för avstånd från toppen */
 .sequencer {
   display: flex;
   min-height: 1000;
@@ -144,8 +129,7 @@ svg {
   margin-top: 50px;
 }
 
-/* Ställer in layout för olika spår i sequencern */
-.hihat-track,
+.hihat-track, /*CSS för tracks*/
 .snare-track,
 .kick-track,
 .tom-track {
@@ -155,24 +139,18 @@ svg {
   width: 70%;
   margin-top: 5px;
 }
-
-/* Flexcontainer för olika typer av trummor */
 .kick,
 .snare,
 .hihat,
 .tom {
   display: flex;
 }
-
-/* Kontrollpanel för att placera knappar och element */
-.controls {
+.controls { /*CSS för kontrollerna*/
   justify-content: space-between;
   align-items: center;
   margin: 0px 2px;
 }
-
-/* Stil för kontrollknappar */
-.controls button {
+.controls button { /*CSS för de olika kontrollknapparna*/
   padding: 15px;
   border: none;
   background: rgb(33, 33, 33);
@@ -183,17 +161,17 @@ svg {
   border-radius: 5px;
 }
 
-/* Stil för select-element */
-select {
-  background: rgb(33, 33, 33);
+select { /*CSS för drop-down menyn där man väljer de olika trummorna samt mute-knapparna*/
+  background: rgb(33, 33, 33); /*Bakgrundsfärgen för mute-knapparna när de inte är aktiverade*/
   border-radius: 5px;
-  font-family: 'hanken vanlig'; 
+  font-family: 'hanken vanlig'; /*Ändrar fonten på texten som visas på drop-down menyn*/
   color: white;
   border: 0px solid rgb(0, 0, 0);
 }
-
-/* Stil för play-knapp */
-.play {
+.pad {
+  transition: all 0.5s ease;
+}
+.play { /*CSS för play och pause knappen*/
   padding: 15px 30px;
   font-size: 25px;
   font-family: 'hanken vanlig';
@@ -205,13 +183,19 @@ select {
   margin-top: 30px;
 }
 
-/* Stil för hovring över play-knapp */
-.play:hover {
-  background: rgb(0, 0, 0);
+select {
+  padding: 10px;
+  font-size: 10px;
+}
+.mute.active { 
+  background: rgb(255, 0, 0); /*Ändrar bakgrundsfärg till röd på mute-knapparna när de aktiveras*/
 }
 
-/* Stil för tempo-slider */
-.tempo-slider {
+.tempo {
+  margin: 10px;
+  width: 30%;
+}
+.tempo-slider { /*CSS för tempo slidern*/
   padding: 2px;
   -webkit-appearance: none;
   appearance: none;
@@ -222,16 +206,13 @@ select {
   cursor: pointer;
   border-radius: 20px;
 }
-
-/* Stil för tempo-text */
 .tempo p {
   font-size: 30px;
   margin: 0px;
   text-align: center;
 }
 
-/* Nyckelbildsanimation för att visa spår som spelas */
-@keyframes playTrack {
+@keyframes playTrack { /*Lägger till en animation för funktionen playTrack som ändrar trummplattorna till olika storlekar beroende på om det är aktivt eller inte*/
   from {
     transform: scale(1);
   }
