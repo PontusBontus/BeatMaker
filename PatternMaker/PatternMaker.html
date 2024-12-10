@@ -14,21 +14,21 @@
 </head>
 
 <body>
-
+        <!--Navbar så man kan navigera webbsidorna-->
     <div class="navbar">
         <a href="/index.html">Home</a>
           <a href="/PatternMaker/PatternMaker.html">Pattern Maker</a>
           <a href="/About/About.html">About</a>
           <img src="logga.png" alt="" class="logga">
     </div>
-
+    <!--klasser till beatmakern-->
     <div class="sequencer">
         <div class="kick-track">
             <div class="controls">
                 <h1 class="kickindex">Kick</h1>
                 <button data-track="0" class="mute kick-volume">
                     <i class="fas fa-volume-up"></i>
-                </button>
+                </button><!--Olika ljud och klasser för kicksen-->
                 <select name="kick-select" id="kick-select">
                     <option value="./sounds/kick1.wav">Kicks 1</option>
                     <option value="./sounds/kick2.wav">Kicks 2</option>
@@ -37,7 +37,7 @@
                     <option value="./sounds/kick5.wav">Kicks 5</option>
                 </select>
             </div>
-            <div class="kick">
+            <div class="kick"><!--Rutorna du väljer för att spela upp kick ljud-->
                 <div class="pad kick-pad b0"></div>
                 <div class="pad kick-pad b1"></div>
                 <div class="pad kick-pad b2"></div>
